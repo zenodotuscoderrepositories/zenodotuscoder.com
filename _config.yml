@@ -1,0 +1,16 @@
+title:        ZenodotusCoder.com
+name:         ZenodotusCoder.com
+description:  ZenodotusCoder.com
+author:       Zenodotus Coder
+author_email: zenodotuscoder@gmail.com
+email:        zenodotuscoder@gmail.com
+url:          "https://www.zenodotuscoder.com/"
+includes_dir: .
+layouts_dir:  zenodotuscoder.com/layouts
+exclude:      [
+               CNAME,
+               LICENSE,
+               README.md,
+               zenodotuscoder.com/layouts/*,
+               zenodotuscoder.com/README.md
+              ]

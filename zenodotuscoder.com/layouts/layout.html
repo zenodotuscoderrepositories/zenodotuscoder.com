@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--/**
+ * ZenodotusCoder.com
+ *
+ * Copyright (c) 2023 Zenodotus Coder <zenodotuscoder@gmail.com>
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ * @copyright 2023 Zenodotus Coder <zenodotuscoder@gmail.com>
+ * @license MIT
+ * @see {@link https://github.com/zenodotuscoderrepositories/zenodotuscoder.com GitHub Repository}
+ * @see {@link https://www.zenodotuscoder.com/ Website}
+ * @author Zenodotus Coder <zenodotuscoder@gmail.com>
+ */-->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+		<meta name="description" content="{{ site.description }}" />
+		<meta name="keywords" content="{% if page.title %}{{ page.title }},{% endif %}{% if site.title %}{{ site.title }},{% endif %}{{ site.description }}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="/zenodotuscoder.com/images/favicon.ico" />
+		<link rel="icon" href="/zenodotuscoder.com/images/favicon.ico" />
+		<style>
+			/*
+			YUI 3.18.1 (build f7e7bcb)
+			Copyright 2014 Yahoo! Inc. All rights reserved.
+			Licensed under the BSD License.
+			http://yuilibrary.com/license/
+			Available at http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css
+			*/
+			html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+			html,body                { background-image:url('/zenodotuscoder.com/images/tiled-background.png');background-position:50% 0;background-size:85px 85px;color:#24292e;font-family:'Calibri',Arial,sans-serif;font-size:15px;text-align:center;text-shadow:-1px -1px #ffffff,-1px 1px #ffffff,1px -1px #ffffff,1px 1px #ffffff,-2px -2px #ffffff,-2px 2px #ffffff,2px -2px #ffffff,2px 2px #ffffff }
+			a                        { color:#0066cc;text-decoration:underline }
+			a:hover                  { color:#3399ff;text-decoration:none }
+			h1,h2                    { font-size:45px;font-weight:bold;font-weight:bold;padding:45px 0 0 }
+			h2                       { color:#999999;font-size:30px;padding-top:0 }
+			p                        { line-height:150%;margin:0;padding:10px 10px 0 }
+			pre,pre code             { color:#999999;font-family:Consolas,Courier,monospace;font-size:14px;font-weight:bold;line-height:150%;display:block;overflow:hidden;padding:0;width:100% }
+			pre code                 { text-shadow:-1px -1px #ffffff,-1px 1px #ffffff,1px -1px #ffffff,1px 1px #ffffff,-2px -2px #ffffff,-2px 2px #ffffff,2px -2px #ffffff,2px 2px #ffffff,-3px -3px #ffffff,-3px 3px #ffffff,3px -3px #ffffff,3px 3px #ffffff,-4px -4px #ffffff,-4px 4px #ffffff,4px -4px #ffffff,4px 4px #ffffff,-5px -5px #ffffff,-5px 5px #ffffff,5px -5px #ffffff,5px 5px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff }
+
+			#article,#header,#footer { position:relative;z-index:2 }
+			#footer                  { border-top:1px solid #dddddd;color:#999999;margin:15px auto 0;padding:0 0 15px;width:300px }
+			#avatar                  { border:5px solid #ffffff;border-radius:99px;display:block;height:75px;margin:0 auto;-moz-border-radius:99px;width:75px }
+			#athens                  { background-image:url('/zenodotuscoder.com/images/athens.png');background-position:50% 100%;background-repeat:no-repeat;background-size:contain;bottom:0;display:block;height:100%;left:0;pointer-events:none;position:fixed;right:0;top:0;width:100%;z-index:1 }
+
+			@media only screen and (max-height:499px) { h1 { padding-top:15px } }
+			@media only screen and (max-width:499px)  { h1 { padding-top:15px } }
+			@media only screen and (max-width:499px)  {
+				h1,h2 { font-size:33px }
+				h2    { font-size:22px }
+			}
+
+			@media only screen and (max-width:699px) {
+				pre,pre code { font-size:12px;text-shadow:-1px -1px #ffffff,-1px 1px #ffffff,1px -1px #ffffff,1px 1px #ffffff,-2px -2px #ffffff,-2px 2px #ffffff,2px -2px #ffffff,2px 2px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff }
+			}
+			@media only screen and (max-width:599px) { pre,pre code { font-size:10px } }
+			@media only screen and (max-width:499px) { pre,pre code { font-size:8px } }
+			@media only screen and (max-width:399px) { pre,pre code { font-size:7px } }
+			@media only screen and (max-width:349px) { pre,pre code { font-size:6px } }
+		</style>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-XNK5NZ8S6C"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-XNK5NZ8S6C');
+		</script>
+	</head>
+	<body>
+		<article>
+			<div id="article">
+				{{ content }}
+			</div>
+		</article>
+		<footer>
+			<div id="footer">
+				<p>ZenodotusCoder.com &#169; 2023</p>
+			</div>
+		</footer>
+		<b id="athens"></b>
+	</body>
+</html>
