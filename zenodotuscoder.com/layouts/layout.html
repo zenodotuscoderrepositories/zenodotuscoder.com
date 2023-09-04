@@ -44,34 +44,58 @@
 			*/
 			html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
 
-			html,body                { background-image:url('/zenodotuscoder.com/images/tiled-background.png');background-position:50% 0;background-size:85px 85px;color:#24292e;font-family:'Calibri',Arial,sans-serif;font-size:15px;text-align:center;text-shadow:-1px -1px #ffffff,-1px 1px #ffffff,1px -1px #ffffff,1px 1px #ffffff,-2px -2px #ffffff,-2px 2px #ffffff,2px -2px #ffffff,2px 2px #ffffff }
-			a                        { color:#0066cc;text-decoration:underline }
-			a:hover                  { color:#3399ff;text-decoration:none }
-			h1,h2                    { font-size:45px;font-weight:bold;font-weight:bold;padding:45px 0 0 }
+			html,body                { background-image:url('/zenodotuscoder.com/images/tiled-background.png');background-position:50% 0;background-size:85px 85px;color:#24292e;font-family:'Calibri',Arial,sans-serif;font-size:15px;text-align:center }
+			a                        { color:#0066cc;text-decoration:none }
+			a:hover                  { color:#3399ff;text-decoration:underline }
+			h1,h2                    { font-size:45px;font-weight:bold;font-weight:bold;padding:15px 0 0 }
 			h2                       { color:#999999;font-size:30px;padding-top:0 }
 			p                        { line-height:150%;margin:0;padding:10px 10px 0 }
 			pre,pre code             { color:#999999;font-family:Consolas,Courier,monospace;font-size:14px;font-weight:bold;line-height:150%;display:block;overflow:hidden;padding:0;width:100% }
 			pre code                 { text-shadow:-1px -1px #ffffff,-1px 1px #ffffff,1px -1px #ffffff,1px 1px #ffffff,-2px -2px #ffffff,-2px 2px #ffffff,2px -2px #ffffff,2px 2px #ffffff,-3px -3px #ffffff,-3px 3px #ffffff,3px -3px #ffffff,3px 3px #ffffff,-4px -4px #ffffff,-4px 4px #ffffff,4px -4px #ffffff,4px 4px #ffffff,-5px -5px #ffffff,-5px 5px #ffffff,5px -5px #ffffff,5px 5px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff }
 
 			#article,#header,#footer { position:relative;z-index:2 }
-			#footer                  { border-top:1px solid #dddddd;color:#999999;margin:15px auto 0;padding:0 0 15px;width:300px }
+			#article                 { padding:30px 0 0 }
+			#article-inner           { background-color:#ffffff;background-color:rgba(255, 255, 255, 0.67);border-radius:30px;margin:0 auto;-moz-border-radius:30px;padding:15px 15px 30px;width:700px }
+			#footer                  { border-top:1px solid #dddddd;color:#999999;margin:15px auto 0;padding:0 0 350px;width:300px }
+			#footer a                { color:#999999 }
+			#footer a:hover          { color:#3399ff }
 			#avatar                  { border:5px solid #ffffff;border-radius:99px;display:block;height:75px;margin:0 auto;-moz-border-radius:99px;width:75px }
-			#athens                  { background-image:url('/zenodotuscoder.com/images/athens.png');background-position:50% 100%;background-repeat:no-repeat;background-size:contain;bottom:0;display:block;height:100%;left:0;pointer-events:none;position:fixed;right:0;top:0;width:100%;z-index:1 }
+			#athens                  { padding:0;pointer-events:none;position:relative;z-index:3 }
+			#athens img              { bottom:0;display:block;left:0;pointer-events:none;position:fixed;right:0;width:100%;z-index:3 }
 
-			@media only screen and (max-height:499px) { h1 { padding-top:15px } }
-			@media only screen and (max-width:499px)  { h1 { padding-top:15px } }
 			@media only screen and (max-width:499px)  {
 				h1,h2 { font-size:33px }
 				h2    { font-size:22px }
 			}
 
-			@media only screen and (max-width:699px) {
-				pre,pre code { font-size:12px;text-shadow:-1px -1px #ffffff,-1px 1px #ffffff,1px -1px #ffffff,1px 1px #ffffff,-2px -2px #ffffff,-2px 2px #ffffff,2px -2px #ffffff,2px 2px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff }
-			}
+			@media only screen and (max-width:699px) { pre,pre code { font-size:12px;text-shadow:-1px -1px #ffffff,-1px 1px #ffffff,1px -1px #ffffff,1px 1px #ffffff,-2px -2px #ffffff,-2px 2px #ffffff,2px -2px #ffffff,2px 2px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff,0 0 25px #ffffff } }
 			@media only screen and (max-width:599px) { pre,pre code { font-size:10px } }
 			@media only screen and (max-width:499px) { pre,pre code { font-size:8px } }
 			@media only screen and (max-width:399px) { pre,pre code { font-size:7px } }
 			@media only screen and (max-width:349px) { pre,pre code { font-size:6px } }
+
+			@media only screen and (max-width:749px)  { #article-inner { border-radius:15px;-moz-border-radius:15px;padding:10px 10px 25px;width:auto } }
+			@media only screen and (max-width:499px)  { #article { padding:5px 5px 0 } }
+			@media only screen and (max-height:499px) { #article { padding:5px 5px 0 } }
+
+			@media only screen and (min-width:1921px) { #footer { padding-bottom:700px } }
+			@media only screen and (max-width:1899px) { #footer { padding-bottom:335px } }
+			@media only screen and (max-width:1799px) { #footer { padding-bottom:320px } }
+			@media only screen and (max-width:1699px) { #footer { padding-bottom:305px } }
+			@media only screen and (max-width:1599px) { #footer { padding-bottom:290px } }
+			@media only screen and (max-width:1499px) { #footer { padding-bottom:275px } }
+			@media only screen and (max-width:1399px) { #footer { padding-bottom:260px } }
+			@media only screen and (max-width:1299px) { #footer { padding-bottom:245px } }
+			@media only screen and (max-width:1199px) { #footer { padding-bottom:230px } }
+			@media only screen and (max-width:1099px) { #footer { padding-bottom:215px } }
+			@media only screen and (max-width:999px)  { #footer { padding-bottom:200px } }
+			@media only screen and (max-width:899px)  { #footer { padding-bottom:180px } }
+			@media only screen and (max-width:799px)  { #footer { padding-bottom:160px } }
+			@media only screen and (max-width:699px)  { #footer { padding-bottom:140px } }
+			@media only screen and (max-width:599px)  { #footer { padding-bottom:120px } }
+			@media only screen and (max-width:499px)  { #footer { padding-bottom:100px } }
+			@media only screen and (max-width:399px)  { #footer { border-top:0;margin-top:0;padding-bottom:80px;width:auto } }
+			@media only screen and (max-width:299px)  { #footer { padding-bottom:60px } }
 		</style>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-XNK5NZ8S6C"></script>
 		<script>
@@ -84,14 +108,18 @@
 	<body>
 		<article>
 			<div id="article">
-				{{ content }}
+				<div id="article-inner">
+					{{ content }}
+				</div>
 			</div>
 		</article>
 		<footer>
 			<div id="footer">
-				<p>ZenodotusCoder.com &#169; 2023</p>
+				<p><a href="https://www.zenodotuscoder.com/" title="ZenodotusCoder.com">ZenodotusCoder.com</a> &#169; 2023</p>
 			</div>
 		</footer>
-		<b id="athens"></b>
+		<p id="athens">
+			<img src="/zenodotuscoder.com/images/athens.png" alt="" />
+		</p>
 	</body>
 </html>
