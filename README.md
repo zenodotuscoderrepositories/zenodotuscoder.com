@@ -1,3 +1,3 @@
-# ZenodotusCoder.com
+# zenodotuscoder.com
 
-This repository manages the [www.zenodotuscoder.com](https://www.zenodotuscoder.com/) website.
+This repository manages the [zenodotuscoder.com](https://www.zenodotuscoder.com/) website.
