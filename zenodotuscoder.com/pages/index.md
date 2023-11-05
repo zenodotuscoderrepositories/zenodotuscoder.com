@@ -2,18 +2,17 @@
 layout:    layout
 title:     Zenodotus Coder&colon; Ζηνόδοτος ο Κωδικός
 permalink: /
+tab:       1
 ---
 
-<pre><code>  _____                    _       _                ____          _           
- |__  /___ _ __   ___   __| | ___ | |_ _   _ ___   / ___|___   __| | ___ _ __ 
-   / // _ \ '_ \ / _ \ / _` |/ _ \| __| | | / __| | |   / _ \ / _` |/ _ \ '__|
-  / /|  __/ | | | (_) | (_| | (_) | |_| |_| \__ \ | |__| (_) | (_| |  __/ |   
- /____\___|_| |_|\___/ \__,_|\___/ \__|\__,_|___/  \____\___/ \__,_|\___|_|   </code></pre>
+<h1 id="zenodotus-coder" align="center"><center>Zenodotus Coder</center></h1>
 
-<img src="/zenodotuscoder.com/images/avatar.jpg" alt="Zenodotus Coder’s Avatar" id="avatar" />
+<h2 id="ζηνόδοτος-ο-κωδικός" align="center"><center>Ζηνόδοτος ο Κωδικός</center></h2>
 
-# Zenodotus Coder
+<p align="center">
+    <a href="https://www.zenodotuscoder.com/" title="">
+        <img src="/zenodotuscoder.com/images/avatar.png" alt="" title="" width="400" id="avatar" />
+    </a>
+</p>
 
-## Ζηνόδοτος ο Κωδικός
-
-I am Zenodotus. I am coder. This is website. Follow on [GitHub](https://github.com/zenodotuscoder). Follow on [Twitter](https://twitter.com/zenodotuscoder).
+I am Zenodotus. I am coder. This is website. Follow on [GitHub](https://github.com/zenodotuscoder). Follow on [𝕏, formerly Twitter](https://twitter.com/zenodotuscoder).
