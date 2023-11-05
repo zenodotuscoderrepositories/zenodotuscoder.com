@@ -314,5 +314,18 @@
 		<p id="athens">
 			<img src="/zenodotuscoder.com/images/athens.png" alt="" />
 		</p>
+		<script type="text/javascript">
+			(function() {
+				var avatarElement = document.getElementById("avatar");
+				if (avatarElement !== null) {
+					avatarElement.addEventListener("click", function(e) {
+						e.preventDefault();
+						e.stopPropagation();
+					});
+				}
+			})();
+		</script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+		<script type="text/javascript">hljs.highlightAll();</script>
 	</body>
 </html>
