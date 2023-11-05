@@ -44,19 +44,27 @@
 			*/
 			html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
 
-			html,body                { background-image:url('/zenodotuscoder.com/images/tiled-background.png');background-position:50% 0;background-size:85px 85px;color:#24292e;font-family:'Calibri',Arial,sans-serif;font-size:15px;text-align:center }
+			html,body                { background-image:url('/documentation/images/tiled-background.png');background-position:50% 0;background-size:67px 67px;color:#24292e;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:15px;text-align:center }
 			strong                   { font-weight:bold }
 			em                       { font-style:italic }
-			a                        { color:#0066cc;text-decoration:none }
+			a                        { color:#0151a2;text-decoration:none }
 			a:hover                  { color:#3399ff;text-decoration:underline }
-			h1,h2                    { font-size:45px;font-weight:bold;font-weight:bold;padding:10px 10px 0 }
-			h2                       { color:#999999;font-size:30px;padding-top:0 }
+			h1,h2,h3,h4,h5,h6        { font-size:45px;font-weight:bold;line-height:100%;padding:10px 10px 0;text-align:center }
+			h2,h3,h4,h5,h6           { color:#999999;font-size:30px;line-height:125%;padding-top:0 }
+			h3,h4,h5,h6              { border-bottom:1px solid #dbdddf;color:#000000;font-size:30px;text-align:left;padding-bottom:5px;padding-top:10px }
+			h4,h5,h6                 { border-bottom:0;font-size:25px;padding-bottom:0 }
+			h5,h6                    { font-size:20px }
+			h6                       { font-size:15px }
 			@media only screen and (max-width:499px)  {
 				h1,h2 { font-size:33px }
 				h2    { font-size:22px }
 			}
-			p                        { line-height:150%;margin:0;padding:10px 10px 0 }
-			pre,pre code             { color:#999999;display:block;font-family:'Consolas','Courier New',Courier,monospace;font-size:14px;font-weight:bold;line-height:150%;overflow:hidden;padding:0;width:100% }
+			p,ol,ul                  { line-height:150%;margin:0;padding:7px 10px 0 }
+			ol,ul                    { list-style-type:decimal;padding-left:30px }
+			ul                       { list-style-type:disc }
+			ol li,ul li              { padding:3px 0 0 }
+			pre,pre code             { background-color:#f6f8fa;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,Courier,monospace;font-size:12px;line-height:150%;padding:0 }
+			pre                      { border:0 solid #ffffff;border-width:0 10px;box-sizing:border-box;display:block;margin:10px 0 0;-moz-box-sizing:border-box;overflow:scroll;overflow-x:scroll;overflow-y:visible;padding:10px;-webkit-box-sizing:border-box;width:100% }
 			@media only screen and (max-width:699px) { pre,pre code { font-size:12px } }
 			@media only screen and (max-width:599px) { pre,pre code { font-size:10px } }
 			@media only screen and (max-width:499px) { pre,pre code { font-size:8px } }
@@ -64,12 +72,15 @@
 			@media only screen and (max-width:349px) { pre,pre code { font-size:6px } }
 
 			#article,#header,#footer { position:relative;z-index:2 }
-			#article                 { padding:30px 0 0 }
-			@media only screen and (max-width:499px)  { #article { padding:5px 5px 0 } }
-			@media only screen and (max-height:499px) { #article { padding:5px 5px 0 } }
-			#article-inner           { background-color:#ffffff;border-radius:30px;margin:0 auto;-moz-border-radius:30px;padding:20px 20px 30px;width:700px }
+			#article                 { padding:167px 3px 0 }
+			@media only screen and (max-width:699px)  { #article { padding-top:156px } }
+			@media only screen and (max-width:599px)  { #article { padding-top:137px } }
+			/*@media only screen and (max-width:499px)  { #article { padding:147px 5px 0 } }
+			@media only screen and (max-height:499px) { #article { padding:147px 5px 0 } }*/
+			#article-inner           { background-color:#ffffff;border:1px solid #dddddd;border-radius:30px;box-shadow:rgba(0,0,0,0.15) 0 0 15px;margin:0 auto;-moz-border-radius:30px;-moz-box-shadow:rgba(0,0,0,0.15) 0 0 15px;padding:20px 20px 30px;text-align:left;width:700px }
 			@media only screen and (max-width:749px)  { #article-inner { border-radius:15px;-moz-border-radius:15px;padding:10px 10px 25px;width:auto } }
-			#footer                  { border-top:1px solid #dddddd;color:#999999;margin:20px auto 0;padding:0 0 350px;width:300px }
+			#avatar                  { cursor:default }
+			#footer                  { color:#999999;margin:15px auto 0;padding:0 0 350px }
 			@media only screen and (min-width:1921px) { #footer { padding-bottom:700px } }
 			@media only screen and (max-width:1899px) { #footer { padding-bottom:335px } }
 			@media only screen and (max-width:1799px) { #footer { padding-bottom:320px } }
@@ -86,14 +97,173 @@
 			@media only screen and (max-width:699px)  { #footer { padding-bottom:140px } }
 			@media only screen and (max-width:599px)  { #footer { padding-bottom:120px } }
 			@media only screen and (max-width:499px)  { #footer { padding-bottom:100px } }
-			@media only screen and (max-width:399px)  { #footer { border-top:0;margin-top:0;padding-bottom:80px;width:auto } }
+			@media only screen and (max-width:399px)  { #footer { margin-top:0;padding-bottom:80px } }
 			@media only screen and (max-width:299px)  { #footer { padding-bottom:60px } }
 			#footer a                { color:#999999 }
 			#footer a:hover          { color:#3399ff }
-			#avatar                  { border:5px solid #ffffff;border-radius:99px;display:block;height:75px;margin:0 auto;-moz-border-radius:99px;width:75px }
+			#footer-social           { font-size:23px }
+			#footer-social a         { font-size:45px }
 			#athens                  { padding:0;pointer-events:none;position:relative;z-index:3 }
 			#athens img              { bottom:0;display:block;left:0;pointer-events:none;position:fixed;right:0;width:100%;z-index:3 }
+
+			#eyebrow
+			{
+				background:#666666;
+				background:rgba(0,0,0,0.5);
+				background:linear-gradient(top,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.667) 100%);
+				background:-moz-linear-gradient(top,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.667) 100%);
+				background:-ms-linear-gradient(top,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.667) 100%);
+				background:-o-linear-gradient(top,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.667) 100%);
+				background:-webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(0,0,0,0.5)),color-stop(100%,rgba(0,0,0,0.667)));
+				background:-webkit-linear-gradient(top,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.667) 100%);
+				border-bottom:1px solid #222222;
+				height:107px;
+				left:0;
+				padding:0 0 30px;
+				position:absolute;
+				right:0;
+				text-align:center;
+				top:0;
+				z-index:3
+			}
+			@media only screen and (max-width:699px) { #eyebrow { height:96px } }
+			@media only screen and (max-width:599px) { #eyebrow { height:77px } }
+
+				#eyebrow:before
+				{
+					background-image:linear-gradient(top,rgba(247,247,247,1) 0,rgba(247,247,247,0) 100%);
+					background-image:-moz-linear-gradient(top,rgba(247,247,247,1) 0,rgba(247,247,247,0) 100%);
+					background-image:-ms-linear-gradient(top,rgba(247,247,247,1) 0,rgba(247,247,247,0) 100%);
+					background-image:-o-linear-gradient(top,rgba(247,247,247,1) 0,rgba(247,247,247,0) 100%);
+					background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(247,247,247,1)),color-stop(100%,rgba(247,247,247,0)));
+					background-image:-webkit-linear-gradient(top,rgba(247,247,247,1) 0,rgba(247,247,247,0) 100%);
+					border-top:1px solid #f7f7f7;
+					content:"";
+					display:block;
+					height:4px;
+					left:0;
+					position:absolute;
+					right:0;
+					top:138px
+				}
+				@media only screen and (max-width:699px) { #eyebrow:before { top:127px } }
+				@media only screen and (max-width:599px) { #eyebrow:before { top:108px } }
+
+				#eyebrow code
+				{
+					color:#dddddd;
+					display:block;
+					font-family:'Consolas','Courier New',Courier,monospace;
+					font-size:14px;
+					font-style:normal;
+					font-weight:bold;
+					line-height:17px;
+					padding:0 0 0 75px;
+					text-shadow:#222222 1px 1px
+				}
+				@media only screen and (max-width:699px) { #eyebrow code { font-size:12px;line-height:15px;padding-left:65px } }
+				@media only screen and (max-width:599px) { #eyebrow code { font-size:10px;line-height:12px;padding-left:55px } }
+				@media only screen and (max-width:499px) { #eyebrow code { font-size:8px;line-height:125% } }
+				@media only screen and (max-width:399px) { #eyebrow code { font-size:7px;line-height:125% } }
+				@media only screen and (max-width:349px) { #eyebrow code { font-size:6px;line-height:125% } }
+
+				#eyebrow code.avatar
+				{
+					float:right;
+					margin-right:-43px;
+					padding-left:0;
+					position:absolute;
+					right:50%;
+					top:0
+				}
+				@media only screen and (max-width:699px) { #eyebrow code.avatar { margin-right:-38px } }
+				@media only screen and (max-width:599px) { #eyebrow code.avatar { margin-right:-33px } }
+
+					#eyebrow code.avatar img
+					{
+						background-color:#888888;
+						border:1px solid #444444;
+						border-radius:99px;
+						box-shadow:rgba(255,255,255,0.3) 0 0 15px;
+						display:block;
+						float:left;
+						height:73px;
+						margin:12px 0 0;
+						-moz-border-radius:99px;
+						-moz-box-shadow:rgba(255,255,255,0.3) 0 0 15px;
+						position:absolute;
+						right:100%;
+						top:0;
+						width:73px
+					}
+					@media only screen and (max-width:699px) { #eyebrow code.avatar img { height:63px;margin-top:10px;width:63px } }
+					@media only screen and (max-width:599px) { #eyebrow code.avatar img { height:53px;margin-top:8px;width:53px } }
+
+			#eyebrow-links
+			{
+				font-size:13px;
+				left:0;
+				padding:0 0 0 10px;
+				position:absolute;
+				right:0;
+				text-align:center;
+				top:109px;
+				white-space:nowrap;
+				z-index:3
+			}
+			@media only screen and (max-width:699px) { #eyebrow-links { top:98px } }
+			@media only screen and (max-width:599px) { #eyebrow-links { top:79px } }
+			@media only screen and (max-width:499px) { #eyebrow-links { padding-left:7px } }
+			@media only screen and (max-width:349px) { #eyebrow-links { padding-left:5px } }
+
+				#eyebrow-links li
+				{
+					display:block;
+					display:inline-block;
+					*float:left;
+					_float:left;
+					float:none;
+					list-style-type:none
+				}
+
+					#eyebrow-links li a
+					{
+						border-radius:5px 5px 0 0;
+						color:#eeeeee;
+						display:block;
+						display:inline-block;
+						*float:left;
+						_float:left;
+						height:24px;
+						line-height:24px;
+						margin:0 10px 0 0;
+						-moz-border-radius:5px 5px 0 0;
+						padding:1px 10px
+					}
+					#eyebrow-links li a:hover         { color:#99ccff }
+					#eyebrow-links li.active a        { background-color:#f7f7f7;background-image:linear-gradient(top,rgb(251,251,251) 0,rgb(247,247,247) 100%);background-image:-moz-linear-gradient(top,rgb(251,251,251) 0,rgb(247,247,247) 100%);background-image:-ms-linear-gradient(top,rgb(251,251,251) 0,rgb(247,247,247) 100%);background-image:-o-linear-gradient(top,rgb(251,251,251) 0,rgb(247,247,247) 100%);background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,rgb(251,251,251)),color-stop(100%,rgb(247,247,247)));background-image:-webkit-linear-gradient(top,rgb(251,251,251) 0,rgb(247,247,247) 100%);border:0 solid #222222;border-width:1px 1px 0;color:#444444;padding-left:9px;padding-right:9px;padding-top:0 }
+					#eyebrow-links li.active a:hover  { color:#3399ff }
+					@media only screen and (max-width:499px) { #eyebrow-links li a { margin-right:7px;padding-left:7px;padding-right:7px } }
+					@media only screen and (max-width:349px) { #eyebrow-links li a { margin-right:0;padding-left:5px;padding-right:5px } }
+					/*@media only screen and (max-width:299px) { #eyebrow-links li a { padding-left:5px;padding-right:5px;margin-right:5px } }*/
+
+			/* based on https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css */
+			.hljs                                                                                                                                { color:#444444 }
+			.hljs-comment                                                                                                                        { color:#697070 }
+			.hljs-punctuation,.hljs-tag                                                                                                          { color:#444444 }
+			.hljs-tag .hljs-attr,.hljs-tag .hljs-name                                                                                            { color:#444444 }
+			.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag                                    { font-weight:bold }
+			.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type            { color:#880000 }
+			.hljs-section,.hljs-title                                                                                                            { color:#880000;font-weight:bold }
+			.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable { color:#ab5656 }
+			.hljs-literal                                                                                                                        { color:#669955 }
+			.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code                                                                                { color:#397300 }
+			.hljs-meta                                                                                                                           { color:#1f7199 }
+			.hljs-meta .hljs-string                                                                                                              { color:#3388aa }
+			.hljs-emphasis                                                                                                                       { font-style:italic }
+			.hljs-strong                                                                                                                         { font-weight:bold }
 		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-XNK5NZ8S6C"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
@@ -113,8 +283,34 @@
 		<footer>
 			<div id="footer">
 				<p><a href="https://www.zenodotuscoder.com/" title="ZenodotusCoder.com">ZenodotusCoder.com</a> &#169; 2023</p>
+				<p id="footer-social">
+					<a href="https://x.com/zenodotuscoder" title="𝕏"><i class="fab fa-x-twitter"></i></a>
+					<span>&#160;</span>
+					<a href="https://twitter.com/zenodotuscoder" title="Twitter"><i class="fab fa-twitter"></i></a>
+					<span>&#160;</span>
+					<a href="https://github.com/zenodotuscoder" title="GitHub"><i class="fab fa-github"></i></a>
+					<span>&#160;</span>
+					<a href="https://www.patreon.com/zenodotuscoder" title="Patreon"><i class="fab fa-patreon"></i></a>
+				</p>
 			</div>
 		</footer>
+		<p id="eyebrow">
+			<code class="avatar"><img src="/zenodotuscoder.com/images/zenodotuscoder.jpg" alt="Zenodotus Coder’s Avatar" />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</code>
+			<code>&#160;&#160;_____&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;_&#160;&#160;&#160;&#160;&#160;&#160;&#160;_&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;____&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;_&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<br />&#160;|__&#160;&#160;/___&#160;_&#160;__&#160;&#160;&#160;___&#160;&#160;&#160;__|&#160;|&#160;___&#160;|&#160;|_&#160;_&#160;&#160;&#160;_&#160;___&#160;&#160;&#160;/&#160;___|___&#160;&#160;&#160;__|&#160;|&#160;___&#160;_&#160;__&#160;<br />&#160;&#160;&#160;/&#160;//&#160;_&#160;\&#160;'_&#160;\&#160;/&#160;_&#160;\&#160;/&#160;_`&#160;|/&#160;_&#160;\|&#160;__|&#160;|&#160;|&#160;/&#160;__|&#160;|&#160;|&#160;&#160;&#160;/&#160;_&#160;\&#160;/&#160;_`&#160;|/&#160;_&#160;\&#160;'__|<br />&#160;&#160;/&#160;/|&#160;&#160;__/&#160;|&#160;|&#160;|&#160;(_)&#160;|&#160;(_|&#160;|&#160;(_)&#160;|&#160;|_|&#160;|_|&#160;\__&#160;\&#160;|&#160;|__|&#160;(_)&#160;|&#160;(_|&#160;|&#160;&#160;__/&#160;|&#160;&#160;&#160;<br />&#160;/____\___|_|&#160;|_|\___/&#160;\__,_|\___/&#160;\__|\__,_|___/&#160;&#160;\____\___/&#160;\__,_|\___|_|&#160;&#160;&#160;</code>
+		</p>
+		<nav>
+			<ul id="eyebrow-links">
+				<li{% if page.tab == 1 %} class="active"{% endif %}>
+					<a href="/" title="ZenodotusCoder.com">ZenodotusCoder.com</a>
+				</li>
+				<li{% if page.tab == 2 %} class="active"{% endif %}>
+					<a href="https://gamecataloguer.zenodotuscoder.com/" title="Game Cataloguer">Game Cataloguer</a>
+				</li>
+				<li{% if page.tab == 3 %} class="active"{% endif %}>
+					<a href="/more-projects-by-zenodotus-coder/" title="More Projects by Zenodotus Coder">More »</a>
+				</li>
+			</ul>
+		</nav>
 		<p id="athens">
 			<img src="/zenodotuscoder.com/images/athens.png" alt="" />
 		</p>
