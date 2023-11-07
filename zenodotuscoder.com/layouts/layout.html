@@ -56,8 +56,12 @@
 			h5,h6                    { font-size:20px }
 			h6                       { font-size:15px }
 			@media only screen and (max-width:499px)  {
-				h1,h2 { font-size:33px }
-				h2    { font-size:22px }
+				h1,h2,h3,h4,h5,h6 { font-size:33px }
+				h2,h3,h4,h5,h6    { font-size:22px }
+				h3,h4,h5,h6       { font-size:20px }
+				h4,h5,h6          { font-size:18px }
+				h5,h6             { font-size:16px }
+				h6                { font-size:15px }
 			}
 			p,ol,ul                  { line-height:150%;margin:0;padding:7px 10px 0 }
 			ol,ul                    { list-style-type:decimal;padding-left:30px }
@@ -72,14 +76,15 @@
 			@media only screen and (max-width:349px) { pre,pre code { font-size:6px } }
 
 			#article,#header,#footer { position:relative;z-index:2 }
-			#article                 { padding:167px 3px 0 }
-			@media only screen and (max-width:699px)  { #article { padding-top:156px } }
-			@media only screen and (max-width:599px)  { #article { padding-top:137px } }
-			/*@media only screen and (max-width:499px)  { #article { padding:147px 5px 0 } }
-			@media only screen and (max-height:499px) { #article { padding:147px 5px 0 } }*/
+			#article                 { padding:143px 15px 0 }
+			@media only screen and (max-width:699px)  { #article { padding-top:132px } }
+			@media only screen and (max-width:599px)  { #article { padding-top:113px } }
+			@media only screen and (max-width:499px)  { #article { padding-top:103px } }
+			@media only screen and (max-width:399px)  { #article { padding-left:7px;padding-right:7px;padding-top:85px } }
+			@media only screen and (max-width:349px)  { #article { padding-top:78px } }
 			#article-inner           { background-color:#ffffff;border:1px solid #dddddd;border-radius:30px;box-shadow:rgba(0,0,0,0.15) 0 0 15px;margin:0 auto;-moz-border-radius:30px;-moz-box-shadow:rgba(0,0,0,0.15) 0 0 15px;padding:20px 20px 30px;text-align:left;width:700px }
 			@media only screen and (max-width:749px)  { #article-inner { border-radius:15px;-moz-border-radius:15px;padding:10px 10px 25px;width:auto } }
-			#avatar                  { cursor:default }
+			#avatar                  { box-sizing:border-box;cursor:default;max-width:100%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box }
 			#footer                  { color:#999999;margin:15px auto 0;padding:0 0 350px }
 			@media only screen and (min-width:1921px) { #footer { padding-bottom:700px } }
 			@media only screen and (max-width:1899px) { #footer { padding-bottom:335px } }
@@ -119,7 +124,7 @@
 				border-bottom:1px solid #222222;
 				height:107px;
 				left:0;
-				padding:0 0 30px;
+				padding:0 0 20px;
 				position:absolute;
 				right:0;
 				text-align:center;
@@ -128,6 +133,9 @@
 			}
 			@media only screen and (max-width:699px) { #eyebrow { height:96px } }
 			@media only screen and (max-width:599px) { #eyebrow { height:77px } }
+			@media only screen and (max-width:499px) { #eyebrow { height:67px } }
+			@media only screen and (max-width:399px) { #eyebrow { height:57px } }
+			@media only screen and (max-width:349px) { #eyebrow { height:50px } }
 
 				#eyebrow:before
 				{
@@ -144,10 +152,13 @@
 					left:0;
 					position:absolute;
 					right:0;
-					top:138px
+					top:128px
 				}
-				@media only screen and (max-width:699px) { #eyebrow:before { top:127px } }
-				@media only screen and (max-width:599px) { #eyebrow:before { top:108px } }
+				@media only screen and (max-width:699px) { #eyebrow:before { top:117px } }
+				@media only screen and (max-width:599px) { #eyebrow:before { top:98px } }
+				@media only screen and (max-width:499px) { #eyebrow:before { top:88px } }
+				@media only screen and (max-width:399px) { #eyebrow:before { top:78px } }
+				@media only screen and (max-width:349px) { #eyebrow:before { top:71px } }
 
 				#eyebrow code
 				{
@@ -163,9 +174,10 @@
 				}
 				@media only screen and (max-width:699px) { #eyebrow code { font-size:12px;line-height:15px;padding-left:65px } }
 				@media only screen and (max-width:599px) { #eyebrow code { font-size:10px;line-height:12px;padding-left:55px } }
-				@media only screen and (max-width:499px) { #eyebrow code { font-size:8px;line-height:125% } }
-				@media only screen and (max-width:399px) { #eyebrow code { font-size:7px;line-height:125% } }
-				@media only screen and (max-width:349px) { #eyebrow code { font-size:6px;line-height:125% } }
+				@media only screen and (max-width:499px) { #eyebrow code { font-size:8px;line-height:125%;padding-left:45px } }
+				@media only screen and (max-width:399px) { #eyebrow code { font-size:7px;line-height:125%;padding-left:40px } }
+				@media only screen and (max-width:349px) { #eyebrow code { font-size:6px;line-height:125%;padding-left:35px } }
+				@media only screen and (max-width:299px) { #eyebrow code { padding-left:0 } }
 
 				#eyebrow code.avatar
 				{
@@ -178,6 +190,10 @@
 				}
 				@media only screen and (max-width:699px) { #eyebrow code.avatar { margin-right:-38px } }
 				@media only screen and (max-width:599px) { #eyebrow code.avatar { margin-right:-33px } }
+				@media only screen and (max-width:499px) { #eyebrow code.avatar { margin-right:-28px } }
+				@media only screen and (max-width:399px) { #eyebrow code.avatar { margin-right:-23px } }
+				@media only screen and (max-width:349px) { #eyebrow code.avatar { margin-right:-18px } }
+				@media only screen and (max-width:299px) { #eyebrow code.avatar { display:none } }
 
 					#eyebrow code.avatar img
 					{
@@ -198,6 +214,9 @@
 					}
 					@media only screen and (max-width:699px) { #eyebrow code.avatar img { height:63px;margin-top:10px;width:63px } }
 					@media only screen and (max-width:599px) { #eyebrow code.avatar img { height:53px;margin-top:8px;width:53px } }
+					@media only screen and (max-width:499px) { #eyebrow code.avatar img { height:43px;margin-top:6px;width:43px } }
+					@media only screen and (max-width:399px) { #eyebrow code.avatar img { height:38px;margin-top:5px;width:38px } }
+					@media only screen and (max-width:349px) { #eyebrow code.avatar img { height:33px;margin-top:4px;width:33px } }
 
 			#eyebrow-links
 			{
@@ -207,14 +226,15 @@
 				position:absolute;
 				right:0;
 				text-align:center;
-				top:109px;
+				top:99px;
 				white-space:nowrap;
 				z-index:3
 			}
-			@media only screen and (max-width:699px) { #eyebrow-links { top:98px } }
-			@media only screen and (max-width:599px) { #eyebrow-links { top:79px } }
-			@media only screen and (max-width:499px) { #eyebrow-links { padding-left:7px } }
-			@media only screen and (max-width:349px) { #eyebrow-links { padding-left:5px } }
+			@media only screen and (max-width:699px) { #eyebrow-links { top:88px } }
+			@media only screen and (max-width:599px) { #eyebrow-links { top:69px } }
+			@media only screen and (max-width:499px) { #eyebrow-links { padding-left:7px;top:59px } }
+			@media only screen and (max-width:399px) { #eyebrow-links { top:49px } }
+			@media only screen and (max-width:349px) { #eyebrow-links { padding-left:3px;top:42px } }
 
 				#eyebrow-links li
 				{
@@ -225,10 +245,16 @@
 					float:none;
 					list-style-type:none
 				}
+				@media only screen and (max-width:299px) {
+					#eyebrow-links li { display:none }
+					#eyebrow-links li.active { display:inline-block }
+				}
 
 					#eyebrow-links li a
 					{
+						border:0 solid transparent;
 						border-radius:5px 5px 0 0;
+						border-width:1px 1px 0;
 						color:#eeeeee;
 						display:block;
 						display:inline-block;
@@ -238,14 +264,13 @@
 						line-height:24px;
 						margin:0 10px 0 0;
 						-moz-border-radius:5px 5px 0 0;
-						padding:1px 10px
+						padding:0 9px 1px
 					}
 					#eyebrow-links li a:hover         { color:#99ccff }
-					#eyebrow-links li.active a        { background-color:#f7f7f7;background-image:linear-gradient(top,rgb(251,251,251) 0,rgb(247,247,247) 100%);background-image:-moz-linear-gradient(top,rgb(251,251,251) 0,rgb(247,247,247) 100%);background-image:-ms-linear-gradient(top,rgb(251,251,251) 0,rgb(247,247,247) 100%);background-image:-o-linear-gradient(top,rgb(251,251,251) 0,rgb(247,247,247) 100%);background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,rgb(251,251,251)),color-stop(100%,rgb(247,247,247)));background-image:-webkit-linear-gradient(top,rgb(251,251,251) 0,rgb(247,247,247) 100%);border:0 solid #222222;border-width:1px 1px 0;color:#444444;padding-left:9px;padding-right:9px;padding-top:0 }
+					#eyebrow-links li.active a        { background-color:#f7f7f7;background-image:linear-gradient(top,rgb(251,251,251) 0,rgb(247,247,247) 100%);background-image:-moz-linear-gradient(top,rgb(251,251,251) 0,rgb(247,247,247) 100%);background-image:-ms-linear-gradient(top,rgb(251,251,251) 0,rgb(247,247,247) 100%);background-image:-o-linear-gradient(top,rgb(251,251,251) 0,rgb(247,247,247) 100%);background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,rgb(251,251,251)),color-stop(100%,rgb(247,247,247)));background-image:-webkit-linear-gradient(top,rgb(251,251,251) 0,rgb(247,247,247) 100%);border-color:#222222;color:#444444 }
 					#eyebrow-links li.active a:hover  { color:#3399ff }
 					@media only screen and (max-width:499px) { #eyebrow-links li a { margin-right:7px;padding-left:7px;padding-right:7px } }
-					@media only screen and (max-width:349px) { #eyebrow-links li a { margin-right:0;padding-left:5px;padding-right:5px } }
-					/*@media only screen and (max-width:299px) { #eyebrow-links li a { padding-left:5px;padding-right:5px;margin-right:5px } }*/
+					@media only screen and (max-width:349px) { #eyebrow-links li a { margin-right:0;padding-left:3px;padding-right:3px } }
 
 			/* based on https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css */
 			.hljs                                                                                                                                { color:#444444 }
